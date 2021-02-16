@@ -11,14 +11,10 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Payment implements Serializable {
+public class Worker implements Serializable {
 
+    private Long id;
     private String name;
     private Double dailyIncome;
-    private Integer days;
-
-    public double getTotal(){
-        return days * dailyIncome;
-    }
 
 }
