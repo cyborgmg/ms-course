@@ -11,6 +11,24 @@ public class PaymentService {
 
     @Autowired
     private WorkerFeingClient workerFeingClient;
+/*
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @Value("${hr-worker.host}")
+    private String hrWorkerHost;
+
+    public Payment getPayment(long workerId, int days){
+
+        Map<String, String> params = new HashMap<>();
+        params.put("id", ""+workerId);
+
+        Worker worker = restTemplate.getForObject(hrWorkerHost+"/workers/{id}", Worker.class,  params);
+
+        return new Payment(worker.getName(), worker.getDailyIncome(), days);
+    }
+*/
 
     public Payment getPayment(long workerId, int days){
 
