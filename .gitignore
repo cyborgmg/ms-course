@@ -1,2 +1,3 @@
 hr-worker/target/
 hr-api-gateway-zuul/target/
+hr-config-server/target/
